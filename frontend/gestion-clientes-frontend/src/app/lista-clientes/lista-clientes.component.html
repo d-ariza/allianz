@@ -1,0 +1,21 @@
+<h2>Lista Clientes</h2>
+<table class="table table-striped table-dark table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">nombre</th>
+      <th scope="col">email</th>
+      <th scope="col">telefono</th>
+      <th scope="col">fecha inicial</th>
+      <th scope="col">fecha final</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scope="row" *ngFor="let cliente of clientes">
+      <td>{{cliente.nombre}}</td>
+      <td>{{cliente.email}}</td>
+      <td>{{cliente.telefono}}</td>
+      <td>{{cliente.fInicial}}</td>
+      <td>{{cliente.fFinal}}</td>
+    </tr>
+  </tbody>
+</table>
